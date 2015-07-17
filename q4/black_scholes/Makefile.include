@@ -1,0 +1,27 @@
+# Makefile.include
+#
+# For Q4 in Assignment 1 (CS5270 MCP, 2014 S2)
+# MSc in CS, Dept of CSE, UoM
+# by Sanath Jayasena, June 2014
+# Modified from Prof. Kathy Yelick's http://www.cs.berkeley.edu/~yelick/cs194f07/
+#
+# Platform-dependent settings for Q4
+#
+
+#CC = icc
+CC = gcc
+
+COPTFLAGS = -O2
+#COPTFLAGS = -g
+
+CPPFLAGS = 
+
+#CFLAGS = $(COPTFLAGS)
+CFLAGS = -Wall $(COPTFLAGS)
+
+#LINKER = icc
+LINKER = gcc
+
+LDFLAGS = -lpthread -lm
+
+
